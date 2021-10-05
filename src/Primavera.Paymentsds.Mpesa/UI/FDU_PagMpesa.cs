@@ -10,6 +10,10 @@ namespace Primavera.Paymentsds.Mpesa.UI
 {
     public partial class FDU_PagMpesa : CustomForm
     {
+        public bool pagMpesa { get; set; }
+        public double total { get; set; }
+        public string referencia { get; set; }
+
         public FDU_PagMpesa()
         {
             InitializeComponent();
@@ -23,10 +27,21 @@ namespace Primavera.Paymentsds.Mpesa.UI
                 cbSerie.SelectedValue = serie;
                 txtNumdoc.Value = numdoc;
 
-            }catch(Exception ex)
+                pagMpesa = false;
+
+            }
+            catch(Exception ex)
             {
                 throw ex;
             }
+        }
+
+        private void btProcessar_Click(object sender, EventArgs e)
+        {
+            referencia = txtReferencia.Text;
+            total = Convert.ToDouble( txtTotal.Value);
+            pagMpesa = true;
+            Close();
         }
     }
 }

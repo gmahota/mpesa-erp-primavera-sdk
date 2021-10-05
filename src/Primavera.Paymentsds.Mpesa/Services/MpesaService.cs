@@ -19,13 +19,9 @@ namespace Primavera.Paymentsds.Mpesa.Services
 
         public string api_host;
         public string api_token { get; set; }
-
         public string api_key { get; set; }
-
         public string entity_uuid { get; set; }
-
         public string logFolder { get; set; }
-
         public MpesaService(string host, string apiKey, string entity_uuid, string log)
         {
             this.api_host = host;

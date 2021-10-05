@@ -10,5 +10,6 @@ namespace Primavera.Paymentsds.Mpesa.PayablesReceivables
 {
     public class UiEditorCCorrentes : EditorCCorrentes
     {
+        
     }
 }

@@ -45,10 +45,13 @@
             this.label4 = new System.Windows.Forms.Label();
             this.TS = new System.Windows.Forms.ToolStrip();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.label1 = new System.Windows.Forms.Label();
+            this.txtTotal = new System.Windows.Forms.NumericUpDown();
             this.groupBox2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.txtNumdoc)).BeginInit();
             this.TS.SuspendLayout();
             this.groupBox1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.txtTotal)).BeginInit();
             this.SuspendLayout();
             // 
             // txtReferencia
@@ -87,9 +90,9 @@
             this.groupBox2.Controls.Add(this.label2);
             this.groupBox2.Controls.Add(this.label3);
             this.groupBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F);
-            this.groupBox2.Location = new System.Drawing.Point(4, 175);
+            this.groupBox2.Location = new System.Drawing.Point(3, 172);
             this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(309, 143);
+            this.groupBox2.Size = new System.Drawing.Size(309, 119);
             this.groupBox2.TabIndex = 102;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Pag. Mpesa:";
@@ -106,7 +109,7 @@
             // 
             // txtNumdoc
             // 
-            this.txtNumdoc.Location = new System.Drawing.Point(93, 107);
+            this.txtNumdoc.Location = new System.Drawing.Point(93, 80);
             this.txtNumdoc.Maximum = new decimal(new int[] {
             -727379969,
             232,
@@ -120,7 +123,7 @@
             // 
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F);
-            this.label6.Location = new System.Drawing.Point(31, 109);
+            this.label6.Location = new System.Drawing.Point(30, 86);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(55, 13);
             this.label6.TabIndex = 3;
@@ -130,7 +133,7 @@
             // 
             this.cbSerie.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cbSerie.FormattingEnabled = true;
-            this.cbSerie.Location = new System.Drawing.Point(93, 65);
+            this.cbSerie.Location = new System.Drawing.Point(94, 53);
             this.cbSerie.Name = "cbSerie";
             this.cbSerie.Size = new System.Drawing.Size(183, 21);
             this.cbSerie.TabIndex = 4;
@@ -139,7 +142,7 @@
             // 
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F);
-            this.label5.Location = new System.Drawing.Point(31, 69);
+            this.label5.Location = new System.Drawing.Point(48, 61);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(34, 13);
             this.label5.TabIndex = 3;
@@ -178,6 +181,7 @@
             this.btProcessar.Name = "btProcessar";
             this.btProcessar.Size = new System.Drawing.Size(77, 22);
             this.btProcessar.Text = "Processar";
+            this.btProcessar.Click += new System.EventHandler(this.btProcessar_Click);
             // 
             // bTRefresh
             // 
@@ -217,6 +221,8 @@
             // 
             // groupBox1
             // 
+            this.groupBox1.Controls.Add(this.txtTotal);
+            this.groupBox1.Controls.Add(this.label1);
             this.groupBox1.Controls.Add(this.txtNumdoc);
             this.groupBox1.Controls.Add(this.label6);
             this.groupBox1.Controls.Add(this.cbSerie);
@@ -226,10 +232,32 @@
             this.groupBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F);
             this.groupBox1.Location = new System.Drawing.Point(3, 28);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(309, 143);
+            this.groupBox1.Size = new System.Drawing.Size(309, 138);
             this.groupBox1.TabIndex = 101;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Filtros:";
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F);
+            this.label1.Location = new System.Drawing.Point(23, 112);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(62, 13);
+            this.label1.TabIndex = 6;
+            this.label1.Text = "Referencia:";
+            // 
+            // txtTotal
+            // 
+            this.txtTotal.Location = new System.Drawing.Point(91, 106);
+            this.txtTotal.Maximum = new decimal(new int[] {
+            -727379969,
+            232,
+            0,
+            0});
+            this.txtTotal.Name = "txtTotal";
+            this.txtTotal.Size = new System.Drawing.Size(183, 20);
+            this.txtTotal.TabIndex = 45;
             // 
             // FDU_PagMpesa
             // 
@@ -240,7 +268,7 @@
             this.Controls.Add(this.TS);
             this.Controls.Add(this.groupBox1);
             this.Name = "FDU_PagMpesa";
-            this.Size = new System.Drawing.Size(319, 322);
+            this.Size = new System.Drawing.Size(319, 299);
             this.Text = "FDU_PagMpesa";
             this.groupBox2.ResumeLayout(false);
             this.groupBox2.PerformLayout();
@@ -249,6 +277,7 @@
             this.TS.PerformLayout();
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.txtTotal)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -272,5 +301,7 @@
         private System.Windows.Forms.Label label4;
         internal System.Windows.Forms.ToolStrip TS;
         private System.Windows.Forms.GroupBox groupBox1;
+        private System.Windows.Forms.NumericUpDown txtTotal;
+        private System.Windows.Forms.Label label1;
     }
 }

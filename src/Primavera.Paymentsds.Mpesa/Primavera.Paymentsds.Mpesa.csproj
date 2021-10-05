@@ -31,31 +31,51 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="BasBE100">
+      <HintPath>..\..\..\..\..\..\..\Program Files (x86)\PRIMAVERA\SG100\Apl\BasBE100.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
     <Reference Include="CctBE100">
-      <HintPath>..\..\..\..\..\..\Program Files (x86)\PRIMAVERA\SG100\APL\CctBE100.dll</HintPath>
+      <HintPath>..\..\..\..\..\..\..\Program Files (x86)\PRIMAVERA\SG100\Apl\CctBE100.dll</HintPath>
       <Private>False</Private>
     </Reference>
     <Reference Include="ErpBS100">
       <HintPath>..\..\..\..\..\..\..\Program Files (x86)\PRIMAVERA\SG100\Apl\ErpBS100.dll</HintPath>
       <Private>False</Private>
     </Reference>
+    <Reference Include="IBasBS100">
+      <HintPath>..\..\..\..\..\..\..\Program Files (x86)\PRIMAVERA\SG100\Apl\IBasBS100.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
     <Reference Include="ICctBS100">
-      <HintPath>..\..\..\..\..\..\Program Files (x86)\PRIMAVERA\SG100\APL\ICctBS100.dll</HintPath>
+      <HintPath>..\..\..\..\..\..\..\Program Files (x86)\PRIMAVERA\SG100\Apl\ICctBS100.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="ITesBS100">
+      <HintPath>..\..\..\..\..\..\..\Program Files (x86)\PRIMAVERA\SG100\Apl\ITesBS100.dll</HintPath>
       <Private>False</Private>
     </Reference>
     <Reference Include="IVndBS100">
-      <HintPath>..\..\..\..\..\..\Program Files (x86)\PRIMAVERA\SG100\APL\IVndBS100.dll</HintPath>
+      <HintPath>..\..\..\..\..\..\..\Program Files (x86)\PRIMAVERA\SG100\Apl\IVndBS100.dll</HintPath>
       <Private>False</Private>
     </Reference>
     <Reference Include="Newtonsoft.Json, Version=13.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
       <HintPath>packages\Newtonsoft.Json.13.0.1\lib\net45\Newtonsoft.Json.dll</HintPath>
     </Reference>
     <Reference Include="Primavera.Extensibility.Attributes">
-      <HintPath>..\..\..\..\..\..\Program Files (x86)\PRIMAVERA\SG100\APL\Primavera.Extensibility.Attributes.dll</HintPath>
+      <HintPath>..\..\..\..\..\..\..\Program Files (x86)\PRIMAVERA\SG100\Apl\Primavera.Extensibility.Attributes.dll</HintPath>
       <Private>False</Private>
     </Reference>
     <Reference Include="Primavera.Extensibility.BusinessEntities">
-      <HintPath>..\..\..\..\..\..\Program Files (x86)\PRIMAVERA\SG100\APL\Primavera.Extensibility.BusinessEntities.dll</HintPath>
+      <HintPath>..\..\..\..\..\..\..\Program Files (x86)\PRIMAVERA\SG100\Apl\Primavera.Extensibility.BusinessEntities.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Primavera.Extensibility.CustomCode">
+      <HintPath>..\..\..\..\..\..\..\Program Files (x86)\PRIMAVERA\SG100\APL\Primavera.Extensibility.CustomCode.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Primavera.Extensibility.CustomForm">
+      <HintPath>..\..\..\..\..\..\..\Program Files (x86)\PRIMAVERA\SG100\Apl\Primavera.Extensibility.CustomForm.dll</HintPath>
       <Private>False</Private>
     </Reference>
     <Reference Include="Primavera.Extensibility.Engine">
@@ -63,7 +83,7 @@
       <Private>False</Private>
     </Reference>
     <Reference Include="Primavera.Extensibility.Integration">
-      <HintPath>..\..\..\..\..\..\Program Files (x86)\PRIMAVERA\SG100\APL\Primavera.Extensibility.Integration.dll</HintPath>
+      <HintPath>..\..\..\..\..\..\..\Program Files (x86)\PRIMAVERA\SG100\Apl\Primavera.Extensibility.Integration.dll</HintPath>
       <Private>False</Private>
     </Reference>
     <Reference Include="Primavera.Extensibility.Patterns">
@@ -71,11 +91,15 @@
       <Private>False</Private>
     </Reference>
     <Reference Include="Primavera.Extensibility.PayablesReceivables">
-      <HintPath>..\..\..\..\..\..\Program Files (x86)\PRIMAVERA\SG100\APL\Primavera.Extensibility.PayablesReceivables.dll</HintPath>
+      <HintPath>..\..\..\..\..\..\..\Program Files (x86)\PRIMAVERA\SG100\Apl\Primavera.Extensibility.PayablesReceivables.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Primavera.Extensibility.POS">
+      <HintPath>..\..\..\..\..\..\..\Program Files (x86)\PRIMAVERA\SG100\Apl\Primavera.Extensibility.POS.dll</HintPath>
       <Private>False</Private>
     </Reference>
     <Reference Include="Primavera.Extensibility.Sales">
-      <HintPath>..\..\..\..\..\..\Program Files (x86)\PRIMAVERA\SG100\APL\Primavera.Extensibility.Sales.dll</HintPath>
+      <HintPath>..\..\..\..\..\..\..\Program Files (x86)\PRIMAVERA\SG100\Apl\Primavera.Extensibility.Sales.dll</HintPath>
       <Private>False</Private>
     </Reference>
     <Reference Include="StdBE100">
@@ -89,6 +113,7 @@
     <Reference Include="System" />
     <Reference Include="System.ComponentModel.Composition" />
     <Reference Include="System.Core" />
+    <Reference Include="System.Drawing" />
     <Reference Include="System.IO, Version=4.1.1.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
       <HintPath>packages\System.IO.4.3.0\lib\net462\System.IO.dll</HintPath>
       <Private>True</Private>
@@ -126,13 +151,18 @@
       <Private>True</Private>
     </Reference>
     <Reference Include="System.Threading.Tasks" />
+    <Reference Include="System.Windows.Forms" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
     <Reference Include="System.Data" />
     <Reference Include="System.Xml" />
+    <Reference Include="TesBE100">
+      <HintPath>..\..\..\..\..\..\..\Program Files (x86)\PRIMAVERA\SG100\Apl\TesBE100.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
     <Reference Include="VndBE100">
-      <HintPath>..\..\..\..\..\..\Program Files (x86)\PRIMAVERA\SG100\APL\VndBE100.dll</HintPath>
+      <HintPath>..\..\..\..\..\..\..\Program Files (x86)\PRIMAVERA\SG100\Apl\VndBE100.dll</HintPath>
       <Private>False</Private>
     </Reference>
   </ItemGroup>
@@ -141,15 +171,76 @@
     <Compile Include="Engine\PriEngine.cs" />
     <Compile Include="Helpers\PrimaveraConstHelper.cs" />
     <Compile Include="Helpers\PriUtilsFuntions.cs" />
+    <Compile Include="Models\Invoice.cs" />
+    <Compile Include="Models\MpesaResponce.cs" />
     <Compile Include="Models\User.cs" />
+    <Compile Include="Models\UserResponse.cs" />
     <Compile Include="PayablesReceivables\UiEditorCCorrentes.cs" />
+    <Compile Include="POS\UiEditorVendas.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
     <Compile Include="Sales\UiEditorVendas.cs" />
     <Compile Include="Services\MpesaService.cs" />
     <Compile Include="Services\BaseService.cs" />
+    <Compile Include="UI\FDU_PagMpesa.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UI\FDU_PagMpesa.Designer.cs">
+      <DependentUpon>FDU_PagMpesa.cs</DependentUpon>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
+    <None Include="readme.md" />
+    <None Include="Resources\Template\Template_ArtigosPVP.xlsx" />
+    <None Include="Resources\Template\Template_ArtigosPVP2.xlsx" />
+    <None Include="Resources\Template\Template_ClientesPVP.xlsx" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\FDU_PagMpesa.resx">
+      <DependentUpon>FDU_PagMpesa.cs</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Resources\Actualizar.ico" />
+    <Content Include="Resources\actualizar32x32.ico" />
+    <Content Include="Resources\ajuda.ico" />
+    <Content Include="Resources\ajuda32x32.ico" />
+    <Content Include="Resources\anular.ico" />
+    <Content Include="Resources\anular32x32.ico" />
+    <Content Include="Resources\Arrows-Left-Arrow-icon.png" />
+    <Content Include="Resources\Arrows-Left-Arrow-icon1.png" />
+    <Content Include="Resources\Arrows-Left.png" />
+    <Content Include="Resources\Arrows-Right-Arrow-icon.png" />
+    <Content Include="Resources\Arrows-Right.png" />
+    <Content Include="Resources\bTPrint.Image.png" />
+    <Content Include="Resources\cancelar.ico" />
+    <Content Include="Resources\cancelar32x32.ico" />
+    <Content Include="Resources\email.ico" />
+    <Content Include="Resources\email32x32.ico" />
+    <Content Include="Resources\Feramentas.ico" />
+    <Content Include="Resources\ferramentas32x32.ico" />
+    <Content Include="Resources\gravar.ico" />
+    <Content Include="Resources\gravar32x32.ico" />
+    <Content Include="Resources\lista.ico" />
+    <Content Include="Resources\lista32x32.ico" />
+    <Content Include="Resources\novo.ico" />
+    <Content Include="Resources\novo32x32.ico" />
+    <Content Include="Resources\operacoes.ico" />
+    <Content Include="Resources\operacoes32x32.ico" />
+    <Content Include="Resources\processar.ico" />
+    <Content Include="Resources\processar32x32.ico" />
+    <Content Include="Resources\procurar.ico" />
+    <Content Include="Resources\procurar32x32.ico" />
+    <Content Include="Resources\Scripts\Script_INV_Artigo_MargemPVP.sql" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
